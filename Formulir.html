@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    
+<h1>Formulir Pendaftaran Pelatihan Hactiv8</h1>
+
+<form action="tambah_data.php">
+
+<label for="nama">Nama:</label>
+<input type="text" id="nama" required> <br/>
+
+<label for="tanggal_lahir">Tanggal Lahir:</label>
+<input type="date" id="tanggal_lahir" required> <br/>
+
+<label for="jumlah_keluarga">Jumlah keluarga:</label>
+<input type="number" id="jumlah_keluarga" required> <br/>
+
+<label for="kewarganegaraan">Kewarganegaraan:</label>
+<select name="Kewarganegaraan" id="Kewarganegaraan">
+    <option value="" disabled selected>--pilih kewarganegaraan--</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Indonesia">Rusia</option>
+<option value="Indonesia">Vietnam</option>
+<option value="Indonesia">Singapore</option>
+
+</select><br/>
+
+<label for="profile_picture">Foto Profil</label>
+<input type="file" id="profile_picture" required accept="image/png, image/gif, image/jpeg" /> <br/>
+
+<input type="submit" value="simpan"/>
+<input type="reset" value="reset"/>
+
+</form>
+
+</body>
+</html>
